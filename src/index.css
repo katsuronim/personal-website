@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 71%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  } /* Ubah warna sesuai keinginan */
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0); /* Posisi awal dan akhir tetap */
+  }
+  50% {
+    transform: translateY(-10px); /* Menggerakkan elemen naik 10px */
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1); /* Posisi awal dan akhir tetap */
+  }
+  100% {
+    transform: scale(1.2); /* Menggerakkan elemen naik 10px */
+  }
+}
+
+.typewriter {
+  overflow: hidden; /* Hides the rest of the sentence */
+  border-right: 2px solid black; /* Typing cursor */
+  white-space: nowrap; /* Keeps the text on a single line */
+  animation: typewriter 4s steps(30) 1s 1 normal both,
+    blink 500ms steps(30) infinite;
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite; /* Menambahkan animasi floating dengan durasi 3s */
+}
+.floating:hover {
+  animation: zoom 0.5s ease-in-out forwards; /* Menambahkan animasi floating dengan durasi 3s */
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
