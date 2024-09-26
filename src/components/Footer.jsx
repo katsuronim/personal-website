@@ -1,11 +1,11 @@
 function Footer() {
   return (
     <>
-      <div>
+      <div className="bottom-0">
         <h1 className="pt-10 mx-auto mt-10 mb-5 text-3xl font-bold font-montserrat">
           Contact Me
         </h1>
-        <div className="grid w-1/3 grid-cols-3 mx-auto my-auto h-[60px]">
+        <div className="grid md:w-1/3 grid-cols-3 mx-auto my-auto h-[100px] md:h-[60px]">
           <a href="https://github.com/katsuronim" target="_blank">
             <img
               className="mx-auto h-1/2 hover:scale-110"

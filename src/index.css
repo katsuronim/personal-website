@@ -4,12 +4,51 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes typewriter {
-  from {
-    width: 0;
+/* Media query for larger screens (e.g., laptops, desktops) */
+@media (min-width: 1024px) {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 71%; /* Smaller width for larger screens */
+    }
   }
-  to {
-    width: 71%;
+}
+
+/* Media query for medium screens (e.g., tablets) */
+@media (min-width: 769px) {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 86%; /* Larger width for medium screens */
+    }
+  }
+}
+
+/* Media query for medium screens (e.g., tablets) */
+@media (max-width: 768px) {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%; /* Larger width for medium screens */
+    }
+  }
+}
+
+/* Media query for small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 85%; /* Even larger width for small screens */
+    }
   }
 }
 
@@ -21,6 +60,29 @@
   50% {
     border-color: black;
   } /* Ubah warna sesuai keinginan */
+}
+
+@keyframes buttonHover {
+  0% {
+    border-top-width: 1px;
+    border-radius: 0.75rem;
+    border-top-color: #0d9488;
+  }
+  50% {
+    border-right-width: 1px;
+    border-radius: 0.75rem;
+    border-right-color: #0d9488;
+  }
+  75% {
+    border-bottom-width: 1px;
+    border-radius: 0.75rem;
+    border-bottom-color: #0d9488;
+  }
+  100% {
+    border-left-width: 1px;
+    border-radius: 0.75rem;
+    border-bottom-color: #0d9488;
+  }
 }
 
 @keyframes floating {
@@ -47,6 +109,10 @@
   white-space: nowrap; /* Keeps the text on a single line */
   animation: typewriter 4s steps(30) 1s 1 normal both,
     blink 500ms steps(30) infinite;
+}
+
+.buttonHover:hover {
+  animation: buttonHover 5s ease-in-out forwards;
 }
 
 .floating {

@@ -1,13 +1,13 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-function Aboutme() {
+function AboutMe() {
   return (
     <>
       <Header />
       <div className="flex flex-col">
-        <div className="flex flex-row gap-x-10">
-          <div className="w-1/2 my-auto">
+        <div className="flex flex-col md:flex-row gap-x-10">
+          <div className="w-full my-auto md:w-1/2">
             <h1 className="text-3xl font-bold text-left font-montserrat">
               About Me
             </h1>
@@ -36,7 +36,7 @@ function Aboutme() {
               </h1>
             </a>
           </div>
-          <div className="grid w-1/2 grid-cols-2 shadow-xl">
+          <div className="grid w-full grid-cols-2 my-10 shadow-xl md:my-auto md:w-1/2 md:h-2/3">
             <img
               className="col-span-2 transition rounded-t-lg duration-250 delay-250 hover:shadow-xl hover:rounded-lg hover:scale-105"
               src="./image/portrait.jpeg"
@@ -67,4 +67,4 @@ function Aboutme() {
   );
 }
 
-export default Aboutme;
+export default AboutMe;

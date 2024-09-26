@@ -4,8 +4,9 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Aboutme from "./pages/Aboutme";
 import NoPage from "./pages/NoPage";
+import Portofolio from "./pages/Portofolio";
+import AboutMe from "./pages/AboutMe";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="*" element={<NoPage />} />
           <Route path="/Home" element={<Home />} />
-          <Route path="/AboutMe" element={<Aboutme />} />
+          <Route path="/AboutMe" element={<AboutMe />} />
+          <Route path="/Portofolio" element={<Portofolio />} />
         </Routes>
       </BrowserRouter>
     </>

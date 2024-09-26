@@ -7,7 +7,7 @@ function Capabilities() {
         <h1 className="pt-10 mx-auto mt-10 mb-5 text-3xl font-bold font-montserrat">
           Skills
         </h1>
-        <div className="grid items-center grid-cols-5 gap-5 mt-5">
+        <div className="grid items-center grid-cols-2 gap-5 mt-5 md:grid-cols-5">
           <img
             className="mx-auto transition-opacity duration-300 delay-200 cursor-pointer floating zoom"
             src="/image/html.png"
@@ -59,7 +59,7 @@ function Capabilities() {
             alt="vuejs icon"
           />
           <img
-            className="col-span-5 mx-auto transition-opacity duration-300 delay-200 cursor-pointer floating hover:ease-in"
+            className="col-span-2 mx-auto transition-opacity duration-300 delay-200 cursor-pointer md:col-span-5 floating hover:ease-in"
             src="/image/github.png"
             alt="github icon"
           />

@@ -3,9 +3,12 @@ import { useEffect, useState } from "react";
 function Introduction() {
   return (
     <>
-      <div className="flex flex-row gap-20 pt-14">
+      <div className="flex flex-col gap-5 lg:gap-20 md:flex-row pt-14">
         <div className="my-auto text-left">
-          <h1 className="my-5 text-3xl font-bold typewriter font-montserrat">
+          <h1 className="my-5 text-2xl font-bold md:hidden md:text-3xl typewriter font-montserrat">
+            Hi! I'm Andreas Noah
+          </h1>
+          <h1 className="hidden my-5 text-xl font-bold md:block md:text-2xl lg:text-3xl typewriter font-montserrat">
             Hi! I'm Andreas Noah Jati Sesoca
           </h1>
           <h1 className="text-justify font-montserrat">
@@ -22,7 +25,7 @@ function Introduction() {
         <img
           src="/image/portrait.jpeg"
           alt="Noah's Portrait"
-          className="w-1/3 transition duration-150 ease-in-out delay-150 h-fit rounded-3xl hover:scale-110 hover:outline-teal-600 hover:outline hover:ease-in-out"
+          className="w-full my-auto transition duration-150 ease-in-out delay-150 md:w-1/3 h-fit rounded-3xl hover:scale-110 hover:outline-teal-600 hover:outline hover:ease-in-out"
         />
       </div>
     </>
