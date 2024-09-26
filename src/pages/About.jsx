@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-function AboutMe() {
+function About() {
   return (
     <>
       <Header />
@@ -67,4 +67,4 @@ function AboutMe() {
   );
 }
 
-export default AboutMe;
+export default About;
