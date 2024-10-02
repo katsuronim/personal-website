@@ -12,7 +12,7 @@ function About() {
               About Me
             </h1>
             <h1 className="mt-5 mb-3 text-justify font-montserrat">
-              Hello! I'm a fresh graduate passionate about programming and
+              Hello! I'm a  2020-2024 cumlaude graduatee. Passionate about programming and
               technology. I have a keen interest in deepening my knowledge in
               web development, focusing on both front-end and back-end
               technologies. The power of code fascinates me, especially how it
